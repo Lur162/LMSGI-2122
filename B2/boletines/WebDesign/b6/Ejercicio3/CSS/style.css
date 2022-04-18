@@ -1,0 +1,13 @@
+h1 {
+    border-bottom: 2px solid blue;
+}
+h2 {
+    border: 2px solid rgba(128, 128, 128, 0.753);
+}
+ul {
+    border-top:4px dotted red;
+    border-bottom: 4px dotted red;
+}
+ul:nth-last-child(2) {
+    border: 4px dotted rgb(38, 235, 38);
+}

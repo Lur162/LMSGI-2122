@@ -1,0 +1,40 @@
+caption a{
+    color: green; 
+    box-shadow: none;
+    text-decoration: none ;
+   
+}
+table,tr,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td:first-child{
+    background-color: green;
+}
+th[colspan="5"]{
+    background-color: yellow;
+}
+/*Utilizando pseudoselectores hacer que cuando pasemos el ratón sobre la columna del viernes aumente el tamaño de letra al doble.*/
+td:last-child:hover{
+font-size: 200%;
+}
+/*Aumentar el tamaño de la primera letra menos de Recreo*/
+th:not([colspan="5"]):first-letter{
+   font-size: 2rem;
+}
+
+/*Link visitados*/
+a:visited {
+    color: red
+}
+label::after{
+    content: "*";
+    color: red;
+}
+/*Añade un borde rojo que esté separado 5 px a los campos obligatorios.*/
+input[placeholder="Inserte email del destinario"]{
+   border: 1px solid red;
+}
+:required{
+    padding: 5px;
+}
